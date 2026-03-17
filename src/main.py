@@ -1,17 +1,8 @@
-# ---------------------------------------------------------------------------- #
-#                                                                              #
-# 	Module:       main.py                                                      #
-# 	Author:       mason                                                        #
-# 	Created:      3/13/2026, 1:59:27 PM                                        #
-# 	Description:  V5 project                                                   #
-#                                                                              #
-# ---------------------------------------------------------------------------- #
-
-# Library imports
 from vex import *
+import Chassis, Constants
 
-# Brain should be defined by default
-brain=Brain()
+brain = Constants.brain
+
 
 brain.screen.print("Hello V5")
 
