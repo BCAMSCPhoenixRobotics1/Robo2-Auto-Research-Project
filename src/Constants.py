@@ -1,44 +1,44 @@
-from vex import *
-from Subsystems import Chassis
+# from vex import *
+# from Subsystems import Chassis
 
-# Brain definition
+# # Brain definition
 
-brain : Brain = Brain()
+# brain : Brain = Brain()
 
 
-#////////
-# Left Motor
-kLeftMotorPort : int = 11
-kLeftGearing = GearSetting.RATIO_18_1 # 18-1 gear ratio
-kLeftReversal : bool = False
-kLeftExtEncoder = Encoder(brain.three_wire_port.a)
-#/////////
+# #////////
+# # Left Motor
+# kLeftMotorPort = 11
+# kLeftGearing = GearSetting.RATIO_18_1 # 18-1 gear ratio
+# kLeftReversal = False
+# kLeftExtEncoder = Encoder(brain.three_wire_port.a)
+# #/////////
 
-#////////
-# Right Motor
-kRightMotorPort : int = 1
-kRightGearing = GearSetting.RATIO_18_1 # 18-1 gear ratio
-kRightReversal : bool = False
-kRightExtEncoder = Encoder(brain.three_wire_port.g)
-#////////
+# #////////
+# # Right Motor
+# kRightMotorPort : int = 1
+# kRightGearing = GearSetting.RATIO_18_1 # 18-1 gear ratio
+# kRightReversal = True
+# kRightExtEncoder = Encoder(brain.three_wire_port.g)
+# #////////
 
-#////////
-# Chassis
-kWheelTravel : float = 10.236220472 # inches
-kTrackWidth : float = 11.875 # inches
-kWheelBase : float = 9.5 # inches
-kExternalGearing : int = 1
-kUnits = DistanceUnits.IN
-#///////
+# #////////
+# # Chassis
+# kWheelTravel = 10.236220472 # inches
+# kTrackWidth = 11.875 # inches
+# kWheelBase = 9.5 # inches
+# kExternalGearing = 1
+# kUnits = DistanceUnits.IN
+# #///////
 
-# PID
-kP : float = 0.0
-kI : float = 0.0
-kD : float = 0.0
+# # PID
+# kP  = 0.0
+# kI = 0.0
+# kD = 0.0
 
-#///////
-# misc
-kDistSensPort : int = 21
-kIMUPort : int = 10
-kRadioPort : int = 9
-# //////
+# #///////
+# # misc
+# kDistSensPort = 21
+# kIMUPort = 10
+# kRadioPort = 9
+# # //////
